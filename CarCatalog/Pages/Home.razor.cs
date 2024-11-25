@@ -26,7 +26,7 @@ namespace CarCatalog.Pages
 
         private async Task<List<Car>> GetCarsAsync()
         {
-            var response = await HttpClient.GetFromJsonAsync<List<Car>>("https://localhost:7297/api/cars", new JsonSerializerOptions
+            var response = await HttpClient.GetFromJsonAsync<List<Car>>("https://carcatalog-hqe6bkfra4c0d7fy.southafricanorth-01.azurewebsites.net/api/cars", new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             });
